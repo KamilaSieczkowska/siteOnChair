@@ -1,0 +1,75 @@
+$columns: 3;
+$singleColumnWidth: 100%/$columns; 
+
+@mixin button {
+    color: white;
+    text-decoration: none;
+    background: #38C3AD;
+    border: 1px solid #38C3AD;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-weight: normal;
+    font-size: 25px;
+    text-align: center;
+    transition: 0.5s opacity;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+@mixin title {
+    font-size: 25px;
+    margin-bottom: 60px;
+    margin-left: 15px;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 10px;
+        
+    &:after {
+        bottom: 0;
+        left: 0;
+        width: 320px;
+        height: 8px;
+        background: #38C3AD;
+        position: absolute;
+        content: '';
+    }
+}
+
+@mixin box-title {
+    margin-bottom: 15px;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 10px;
+
+    &:after {
+        bottom: 0;
+        left: 0;
+        width: 150px;
+        height: 6px;
+        background: #38C3AD;
+        position: absolute;
+        content: '';
+    }    
+}
+
+@mixin price-title {
+    font-size: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #27C7AB;
+    margin-top: 20px;
+}
+
+
+@mixin social {
+    width: 35px;
+    height: 35px;
+    text-indent: -999px;
+    overflow: hidden;
+    text-align: left;
+    display: inline-block;
+}

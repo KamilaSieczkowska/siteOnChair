@@ -8,65 +8,283 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700,800,900&amp;subset=latin-ext" rel="stylesheet">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">    
+    <link rel="stylesheet" href="css/style.css"> 
+    <script src="js/scripts.js"></script>   
 </head>
 <body>
     
-    <header class="main__header">
-        <div class="container clearfix">
-            <h1 class="main__logo">
-                <a href="/">
-                    Sit <span>on</span> Chair
-                </a>
-            </h1>
-            
-            <nav class="main__nav">
-                <ul>
-                    <li>
-                        <a href="">O firmie</a>
-                        <ul class="main__nav__submenu">
+    <header class="main-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-1">
+                    <h1 class="main-logo">
+                        <a href="#">SIT <span>ON</span> CHAIR</a>
+                    </h1>
+                </div>
+
+                <div class="col-sm-2">
+                    <!-- <span class="burger"></span> -->
+
+                    <nav class="main-nav">
+                        <ul>
                             <li>
-                                <a href=""> Aktualności</a>
+                                <a href="#">O FIRMIE</a>
+                                <ul class="main-nav-submenu">
+                                    <li><a href="#">Aktualności</a></li>
+                                    <li><a href="#">Nasz team</a></li>
+                                    <li><a href="#">Historia</a></li>
+                                </ul>
                             </li>
                             <li>
-                                <a href=""> Nasz team</a>
+                                <a href="#">GALERIA</a>
                             </li>
                             <li>
-                                <a href=""> Historia</a>
+                                <a href="#">KONTAKT</a>
                             </li>
                         </ul>
-                    </li>
-                    <li>
-                        <a href="">Galeria</a>
-                    </li>
-                    <li>
-                        <a href="">Kontakt</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-
-        <section class="main__slider">
-            <button class="slide__prev">&lt;</button>
-            <button class="slide__next">&gt;</button>
-
-            <div class="slider__slide__cnt">
-                <div class="slider__slide">
-                    
+                    </nav>
                 </div>
+
             </div>
-
-
-        </section>
+        </div>
     </header>
 
+    <section class="section-slider">
+        <div class="container slider-container">
+
+            <div>
+                <button type="button" class="arrow left"> &lt; </button>
+            </div>
+   
+            <div class="slider-row">
+                <div class="slide">
+                    <div class="slide-image">
+                        <img src="images/black_chair.png">
+                    </div>
+                    
+                    <div class="slide-ctn">
+                        <h4 class="slide-title">
+                            SIT <span><strong>ON</strong></span> OUR <span><strong>CHAIR</strong></span>
+                        </h4>
+                        <div class="slide-text">
+                            Lorem ipsum dolor sit amet enim. Etiam ullamcorper.<br>
+                            Suspendise a pellentesque dui, non felis. Maecenas <br>
+                            malesuada elit lectus felis, malesuada ultricies.                                  ligula. Ut molestie a, ulticies porta urna.
+                        </div>
+        
+                        <a href="#" class="slide-button">ZOBACZ WIĘCEJ</a>
+                    </div>
+                </div>
+
+                <!-- <div class="slide">
+                     tu wstawić kolejny slajd
+                </div> -->
+
+            </div> 
+                          
+            <div>
+                <button type="button" class="arrow right"> &gt; </button>
+            </div>
+                
+        </div>
+    </section>
 
 
+    <section class="section-boxes">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-1">
+
+                    <a href="#" class="picture-cnt">
+                        <img src="images/box1_img.jpg" width="329" height="225" alt="" />
+                        <div class="picture-cnt-description">
+                            <h3 class="box-title"> Jakieś krzesło</h3>
+                            <div class="picture-cnt-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In libero arcu, vulputate sit amet
+                            </div>
+                        </div>
+                    </a>
+                    
+                </div>
+
+                <div class="col-lg-1">
+                    <a href="#" class="picture-cnt">
+                        <img src="images/box2_img.jpg" width="329" height="225" alt="" />
+                        <div class="picture-cnt-description">
+                            <h3 class="box-title"> Jakiś fotel</h3>
+                            <div class="picture-cnt-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In libero arcu, vulputate sit amet
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-1">
+                    <a href="#" class="picture-cnt active">
+                        <img src="images/box1_img.jpg" width="329" height="225" alt="" />
+                        <div class="picture-cnt-description">
+                            <h3 class="box-title">Znowu krzesło</h3>
+                            <div class="picture-cnt-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In libero arcu, vulputate sit amet
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="prices-section">
+        <div class="container">
+            <h2 class="title">
+                CENNIK
+            </h2>
+
+            <div class="row">
+
+                <div class="col-lg-1">
+                    <div class="box">
+                        <h2 class="price-title">Basic plan</h2>
+                        <div class="box-price">
+                            <strong class="price-cnt">
+                                <span class="price">85</span>
+                                <sup class="small">99</sup>
+                            </strong>
+                            <div class="text">PLN / MIES.</div>
+                        </div>
+                        <ul class="box-points">
+                            <li>Zakup towaru + dowóz</li>
+                            <li>Serwis</li>
+                        </ul>
+                        <div class="box-button">
+                            <a href="" class="price-button">Dołącz</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-1">
+                    <div class="box active">
+                        <h2 class="price-title">Smart plan</h2>
+                        <div class="box-price">
+                            <strong class="price-cnt">
+                                <span class="price">92</span>
+                                <sup class="small">99</sup>
+                            </strong>
+                            <div class="text">PLN / MIES.</div>
+                        </div>
+                        <ul class="box-points">
+                            <li>Zakup towaru + dowóz</li>
+                            <li>Serwis</li>
+                        </ul>
+                        <div class="box-button">
+                            <a href="" class="price-button">Dołącz</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-1">
+                    <div class="box">
+                        <h2 class="price-title">Premium plan</h2>
+                        <div class="box-price">
+                            <strong class="price-cnt">
+                                <span class="price">105</span>
+                                <sup class="small">99</sup>
+                            </strong>
+                            <div class="text">PLN / MIES.</div>
+                        </div>
+                        <ul class="box-points">
+                            <li>Zakup towaru + dowóz</li>
+                            <li>Serwis</li>
+                        </ul>
+                        <div class="box-button">
+                            <a href="" class="price-button">Dołącz</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
+    <section class="section-contact">
+        <div class="container">
+            <h2 class="title">
+                Kontakt
+            </h2>
 
+            <form class="form" method="POST" action="">
+                <div class="row">
+
+                    <div class="col-lg-2">
+                        <div>
+                            <label for="formName">Imię</label>
+                            <input type="text" name="name" placeholder="Imię" id="formName">
+                        </div>
+                        <div>
+                            <label for="formEmail">Email</label>
+                            <input type="email" name="email" placeholder="E-mail" id="formEmail">
+                        </div>
+                        <div>
+                            <label for="formMessage">Wiadomość</label>
+                            <textarea id="formMessage" name="message" placeholder="Wiadomość"></textarea>
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-lg-1">
+                        <span class="form-img"></span>
+        
+                        <label class="checkbox-label">
+                            <input type="checkbox">
+                            <span class="checkbox-icon"></span>
+                            <span class="checkbox-text">
+                                Zgadzam się na przetwarzanie danych osobowych
+                            </span>
+                        </label>
+                        <div>
+                            <button type="submit" class="form-button">Wyślij</button>
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-1">
+                    <small class="copyright">
+                        &copy; Coders Lab <br>
+                        &amp; Kamila Sieczkowska
+                    </small>
+                </div>
+                <div class="col-lg-2">
+                    <ul class="social-icons">
+                        <li>
+                            <a class="flickr" href="">Flickr</a>
+                        </li>
+                        <li>
+                            <a class="vimeo" href="">Vimeo</a>
+                        </li>
+                        <li>
+                            <a class="pinterest" href="">Pinterest</a>
+                        </li>
+                        <li>
+                            <a class="twitter" href="">Twitter</a>
+                        </li>
+                    </ul>
+                    <small class="footer-logo">
+                        Sit <span>On</span> Chair
+                    </small>
+                </div>
+            </div>
+        </div>
+    </footer>
     
-    <script src="js/scripts.js"></script>
+    
 </body>
 </html>
