@@ -1,6 +1,7 @@
 $columns: 3;
 $singleColumnWidth: 100%/$columns; 
 
+
 @mixin button {
     color: white;
     text-decoration: none;
@@ -39,7 +40,7 @@ $singleColumnWidth: 100%/$columns;
     }
 }
 
-@mixin box-title {
+@mixin picture-title {
     margin-bottom: 15px;
     font-weight: 500;
     position: relative;

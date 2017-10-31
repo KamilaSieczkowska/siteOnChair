@@ -9,27 +9,27 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700,800,900&amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css"> 
-    <script src="js/scripts.js"></script>   
+    <script src="js/scripts.js"></script>  
 </head>
 <body>
     
     <header class="main-header">
         <div class="container">
             <div class="row">
-                <div class="col-sm-1">
+                <div class="col-sm-2 col-md-1">
                     <h1 class="main-logo">
                         <a href="#">SIT <span>ON</span> CHAIR</a>
                     </h1>
                 </div>
 
-                <div class="col-sm-2">
-                    <!-- <span class="burger"></span> -->
+                <div class="col-sm-1 col-md-2">
+                    <span class="hamburger" id="hamburger"></span>
 
-                    <nav class="main-nav">
+                    <nav class="main-nav" id="nav">
                         <ul>
                             <li>
-                                <a href="#">O FIRMIE</a>
-                                <ul class="main-nav-submenu">
+                                <a href="#" id="about">O FIRMIE</a>
+                                <ul class="submenu" id="submenu">
                                     <li><a href="#">Aktualności</a></li>
                                     <li><a href="#">Nasz team</a></li>
                                     <li><a href="#">Historia</a></li>
@@ -49,56 +49,85 @@
         </div>
     </header>
 
-    <section class="section-slider">
-        <div class="container slider-container">
+    <section class="mobile-slider">
+        <div class="mobile-container">
+            <div class="mobile-active">
+                <h4 class="mobile-title">
+                    SIT <span><strong>ON</strong></span> OUR <span><strong>CHAIR</strong></span>
+                </h4>
 
-            <div>
-                <button type="button" class="arrow left"> &lt; </button>
-            </div>
-   
-            <div class="slider-row">
-                <div class="slide">
-                    <div class="slide-image">
-                        <img src="images/black_chair.png">
-                    </div>
-                    
-                    <div class="slide-ctn">
-                        <h4 class="slide-title">
-                            SIT <span><strong>ON</strong></span> OUR <span><strong>CHAIR</strong></span>
-                        </h4>
-                        <div class="slide-text">
-                            Lorem ipsum dolor sit amet enim. Etiam ullamcorper.<br>
-                            Suspendise a pellentesque dui, non felis. Maecenas <br>
-                            malesuada elit lectus felis, malesuada ultricies.                                  ligula. Ut molestie a, ulticies porta urna.
-                        </div>
-        
-                        <a href="#" class="slide-button">ZOBACZ WIĘCEJ</a>
-                    </div>
+                <div class="mobile-image">
+                    <img src="images/black_chair.png">
                 </div>
 
-                <!-- <div class="slide">
-                     tu wstawić kolejny slajd
-                </div> -->
+                <div class="mobile-text">
+                    Lorem ipsum dolor sit amet enim. Etiam ullamcorper.
+                </div>
 
-            </div> 
-                          
-            <div>
-                <button type="button" class="arrow right"> &gt; </button>
+                <a href="#" class="mobile-button">ZOBACZ WIĘCEJ</a>                    
             </div>
-                
+            
         </div>
+
     </section>
 
 
-    <section class="section-boxes">
+    <section class="section-slider">
+            <div class="container">
+                <div class="slider" id="main-slider">
+                    <button type="button" class="arrow left"> &lt; </button>
+                    <div class="slider-cnt">
+                        <div class="slide active">
+                            <div class="slide-image">
+                                <img src="images/black_chair.png">
+                            </div>
+                            <div class="slide-cnt">
+                                <h4 class="slide-title">
+                                    SIT <span><strong>ON</strong></span> OUR <span><strong>CHAIR</strong></span>
+                                </h4>
+                                <div class="slide-text">
+                                        Lorem ipsum dolor sit amet enim.
+                                        malesuada elit lectus felis, malesuada ultricies. Curabitiur et <br>
+                                        ligula. Ut molestie a, ulticies porta urna.
+                                </div>
+                                <a href="#" class="slide-button">ZOBACZ WIĘCEJ</a>
+                            </div>
+                        </div><!-- e: slide -->
+                        <div class="slide">
+                            <div class="slide-image">
+                                <img src="images/red_chair.png">
+                            </div>
+                            <div class="slide-cnt">
+                                <h4 class="slide-title">
+                                    <span><strong>CHOOSE OUR</strong></span> CHAIR 
+                                </h4>
+                                <div class="slide-text">
+                                    Lorem ipsum dolor sit amet enim.
+                                    malesuada elit lectus felis, malesuada ultricies. Curabitiur et <br>
+                                    ligula. Ut molestie a, ulticies porta urna.
+                                </div>
+                                <a href="#" class="button slide-button">ZOBACZ WIĘCEJ</a>
+                            </div>
+                        </div><!-- e: slide -->
+                    </div><!-- e: slide-cnt -->
+                    <button type="button" class="arrow right"> &gt; </button>
+                </div><!-- e: slider -->
+            </div>
+        </section>
+
+
+    <section class="section-pictures">
         <div class="container">
+            <h2 class="title">
+                NASZE REALIZACJE
+            </h2>
             <div class="row">
-                <div class="col-lg-1">
+                <div class="col-sm-3 col-lg-1">
 
                     <a href="#" class="picture-cnt">
-                        <img src="images/box1_img.jpg" width="329" height="225" alt="" />
+                        <img src="images/box1_img.jpg" alt="jakieś krzesło" />
                         <div class="picture-cnt-description">
-                            <h3 class="box-title"> Jakieś krzesło</h3>
+                            <h3 class="picture-title"> Jakieś krzesło</h3>
                             <div class="picture-cnt-text">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In libero arcu, vulputate sit amet
                             </div>
@@ -107,11 +136,11 @@
                     
                 </div>
 
-                <div class="col-lg-1">
+                <div class="col-sm-3 col-lg-1">
                     <a href="#" class="picture-cnt">
-                        <img src="images/box2_img.jpg" width="329" height="225" alt="" />
+                        <img src="images/box2_img.jpg" alt="jakiś fotel" />
                         <div class="picture-cnt-description">
-                            <h3 class="box-title"> Jakiś fotel</h3>
+                            <h3 class="picture-title"> Jakiś fotel</h3>
                             <div class="picture-cnt-text">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In libero arcu, vulputate sit amet
                             </div>
@@ -119,11 +148,11 @@
                     </a>
                 </div>
 
-                <div class="col-lg-1">
-                    <a href="#" class="picture-cnt active">
-                        <img src="images/box1_img.jpg" width="329" height="225" alt="" />
+                <div class="col-sm-3 col-lg-1">
+                    <a href="#" class="picture-cnt">
+                        <img src="images/box1_img.jpg" alt="znowu krzesło" />
                         <div class="picture-cnt-description">
-                            <h3 class="box-title">Znowu krzesło</h3>
+                            <h3 class="picture-title">Znowu krzesło</h3>
                             <div class="picture-cnt-text">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In libero arcu, vulputate sit amet
                             </div>
@@ -143,7 +172,7 @@
 
             <div class="row">
 
-                <div class="col-lg-1">
+                <div class="col-sm-3 col-lg-1">
                     <div class="box">
                         <h2 class="price-title">Basic plan</h2>
                         <div class="box-price">
@@ -163,8 +192,8 @@
                     </div>
                 </div>
 
-                <div class="col-lg-1">
-                    <div class="box active">
+                <div class="col-sm-3 col-lg-1">
+                    <div class="box active-price">
                         <h2 class="price-title">Smart plan</h2>
                         <div class="box-price">
                             <strong class="price-cnt">
@@ -183,7 +212,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-1">
+                <div class="col-sm-3 col-lg-1">
                     <div class="box">
                         <h2 class="price-title">Premium plan</h2>
                         <div class="box-price">
@@ -209,14 +238,13 @@
 
     <section class="section-contact">
         <div class="container">
-            <h2 class="title">
-                Kontakt
-            </h2>
-
             <form class="form" method="POST" action="">
                 <div class="row">
+                    <h2 class="title">
+                        Kontakt
+                    </h2>
 
-                    <div class="col-lg-2">
+                    <div class="col-sm-3 col-lg-2">
                         <div>
                             <label for="formName">Imię</label>
                             <input type="text" name="name" placeholder="Imię" id="formName">
@@ -232,7 +260,7 @@
                         
                     </div>
 
-                    <div class="col-lg-1">
+                    <div class="col-sm-3 col-lg-1">
                         <span class="form-img"></span>
         
                         <label class="checkbox-label">
@@ -242,7 +270,7 @@
                                 Zgadzam się na przetwarzanie danych osobowych
                             </span>
                         </label>
-                        <div>
+                        <div class="btn-box">
                             <button type="submit" class="form-button">Wyślij</button>
                         </div>
                     </div>
@@ -256,13 +284,9 @@
     <footer class="main-footer">
         <div class="container">
             <div class="row">
-                <div class="col-lg-1">
-                    <small class="copyright">
-                        &copy; Coders Lab <br>
-                        &amp; Kamila Sieczkowska
-                    </small>
-                </div>
-                <div class="col-lg-2">
+                
+                <div class="col-sm-3 col-lg-2">
+                    
                     <ul class="social-icons">
                         <li>
                             <a class="flickr" href="">Flickr</a>
@@ -276,10 +300,18 @@
                         <li>
                             <a class="twitter" href="">Twitter</a>
                         </li>
-                    </ul>
+                    </ul> 
+                    
                     <small class="footer-logo">
-                        Sit <span>On</span> Chair
+                            Sit <span>On</span> Chair
                     </small>
+                </div>
+
+                <div class="col-sm-3 col-lg-1">
+                        <small class="copyright">
+                            &copy; Coders Lab <br>
+                            &amp; Kamila Sieczkowska
+                        </small>
                 </div>
             </div>
         </div>
