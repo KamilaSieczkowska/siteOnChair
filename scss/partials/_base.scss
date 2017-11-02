@@ -74,7 +74,7 @@ html, body {
 .main-nav {
     display: none;
 
-    @media (min-width:1025px){
+    @media (min-width:500px){
     display: block;
     float: right;
     text-align: right;
@@ -110,8 +110,9 @@ html, body {
         background: #161616;
         text-align: left;
         font-size: 15px;
+        
 
-        @media (min-width:1025px) {
+        @media (min-width:500px) {
             top: 55px;
             right: -50%;
             background: #000000;
@@ -204,7 +205,7 @@ html, body {
         } 
     }
 
-    @media (min-width:1025px) {
+    @media (min-width:500px) {
         display: none;
     }
 }
@@ -383,7 +384,7 @@ html, body {
     padding-top: 45px;
     padding-bottom: 20px;
     
-    @media (min-width: 1025px) {
+    @media (min-width: 500px) {
         padding-top: 45px;
         padding-bottom: 45px;
         margin-top: 0;
@@ -392,7 +393,7 @@ html, body {
     .title {
         @include title;
 
-        @media (min-width:1025px) {
+        @media (min-width: 500px) {
             display: none;
         }
     }
@@ -406,7 +407,7 @@ html, body {
         color: #222;
         width: 100%;
 
-        @media (min-width:1025px) {
+        @media (min-width:500px) {
             margin: 60px 0;
         }
         
@@ -417,7 +418,7 @@ html, body {
             width: 90%;
             
 
-            @media (min-width: 1025px) {
+            @media (min-width: 500px) {
             width: 329px;
             height: 225px;
             }
@@ -440,7 +441,7 @@ html, body {
             width: 90%;
             transition: 0.5s all;
 
-            @media (min-width:1025px){
+            @media (min-width: 500px){
                 left: 0;
                 width: 100%;
                 top: 120px;                
@@ -502,7 +503,7 @@ html, body {
         flex-direction: column;
         justify-content: space-between;
 
-        @media (min-width:1025px) {
+        @media (min-width:500px) {
         height: 520px;
         }
 
@@ -538,7 +539,7 @@ html, body {
         align-items: center;
         flex-direction: column;
 
-        @media (min-width:1025px){ 
+        @media (min-width:500px){ 
         width: 135px;
         height: 135px;
         margin: 35px auto;
@@ -568,7 +569,7 @@ html, body {
         padding: 10px 0;
         color: #8F8F8F;
 
-        @media (min-width: 1025px) {
+        @media (min-width: 500px) {
             font-size: 24px;
         }
 
@@ -600,7 +601,7 @@ html, body {
     background: #27C7AB;
     border-color: #27C7AB;
 
-    @media (min-width:1025px) {
+    @media (min-width:500px) {
     box-shadow: 0 0 51px 0 #A0A0A0;
     }
 
@@ -642,7 +643,7 @@ html, body {
         padding-top: 45px;
         margin-bottom: 40px;
 
-        @media (min-width:1025px) {
+        @media (min-width:500px) {
             padding-top: 0;
         }
     }
@@ -668,7 +669,7 @@ html, body {
             margin-left: 15px;
             margin-top: 20px;
 
-            @media (min-width:1025px) {
+            @media (min-width:500px) {
                 height: 65px;
                 padding: 15px;
                 width: 100%;
@@ -694,7 +695,7 @@ html, body {
         .form-img {
             display: none;
 
-            @media (min-width:1025px){
+            @media (min-width:500px){
             display: block;
             height: 210px;
             background: url(../images/red_chair.png) center top no-repeat;
@@ -708,7 +709,7 @@ html, body {
             position: relative;
             margin-left: 15px;
 
-            @media (min-width:1025px){
+            @media (min-width:500px){
                 margin-left: 0;
             }
 
@@ -764,7 +765,7 @@ html, body {
             width: 90%;
             margin: 10px auto;
 
-            @media (min-width:1025px){
+            @media (min-width:500px){
                 width: 100%; 
             }
         }
