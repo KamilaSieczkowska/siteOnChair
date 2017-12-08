@@ -1,6 +1,6 @@
-# siteOnChair
+# On Chair
 
-Warsztat html i css.
-Strona zrobiona na podstawie layoutu z kursu programowania.
+Site made for Coders Lab workshop.
 HTML 5, CSS 3, Sass, Gulp, JS.
+Fancy slider, RWD and form. 
 
